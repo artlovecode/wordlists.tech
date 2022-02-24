@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: src/env.d.ts
+  checksum: 675cdd69c1a4715639c2fd9ff14f0a46901fc4685c0f9de3aa039bf774f65260
+- filename: yarn.lock
+  checksum: 193b52a1a5f05ab929cc5b913237b1bce78ba5bee8e21291bace809b4c95446d
+version: ""
