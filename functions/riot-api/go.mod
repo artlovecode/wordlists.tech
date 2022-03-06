@@ -1,4 +1,4 @@
-module github.com/artlovecode/wordlists.tech
+module github.com/artlovecode/wordlists.tech/functions/riot-api
 
 go 1.17
 

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/artlovecode/wordlists.tech/pkg/service"
+	"github.com/artlovecode/wordlists.tech/functions/riot-api/pkg/service"
 	"github.com/aws/aws-lambda-go/events"
 )
 

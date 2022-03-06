@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/artlovecode/wordlists.tech/pkg/handlers"
-	"github.com/artlovecode/wordlists.tech/pkg/service"
+	"github.com/artlovecode/wordlists.tech/functions/riot-api/pkg/handlers"
+	"github.com/artlovecode/wordlists.tech/functions/riot-api/pkg/service"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/kelseyhightower/envconfig"
 )
