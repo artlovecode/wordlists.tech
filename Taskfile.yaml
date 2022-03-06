@@ -1,0 +1,11 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  run-riot-api:
+    dir: ./netlify/functions/riot-api
+    env:
+      RIOT_API_KEY: "RGAPI-a532f2e5-ba43-447f-8e91-50e9bd69d21b"
+    cmds:
+      - go run
