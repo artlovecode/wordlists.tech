@@ -1,5 +1,0 @@
-[build.environment]
-  GO_IMPORT_PATH = "github.com/artlovecode/wordlists.tech/functions/riot-api"
-
-[functions]
-  directory = "netlify/functions"
