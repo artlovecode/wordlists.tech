@@ -8,9 +8,6 @@ import (
 )
 
 type environment struct {
-	POSTGRES_DB             string `envconfig:"POSTGRES_DB" default:""`
-	POSTGRES_DB_USER        string `envconfig:"POSTGRES_DB_USER" default:""`
-	POSTGRES_DB_PASSWORD    string `envconfig:"POSTGRES_DB_PASSWORD" default:""`
 	RIOT_DATADRAGON_VERSION string `envconfig:"RIOT_DATADRAGON_URL" default:"12.5.1"`
 }
 
@@ -18,7 +15,7 @@ func main() {
 	var env environment
 	envconfig.MustProcess("", &env)
 
-	service := service.New(env.POSTGRES_DB, env.RIOT_DATADRAGON_VERSION)
+	service := service.New(env.RIOT_DATADRAGON_VERSION)
 	champListHandler := handlers.NewChampionListHandler(service)
 
 	lambda.Start(champListHandler)

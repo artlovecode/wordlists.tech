@@ -10,7 +10,6 @@ import (
 )
 
 func NewChampionListHandler(s service.Service) func(context.Context, events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
-
 	return func(ctx context.Context, request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 		data, err := s.GetData()
 		if err != nil {
